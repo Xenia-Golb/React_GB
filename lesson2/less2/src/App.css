@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.comment {
+  color: pink;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: pink;
+  color: white;
+
+}
+
+input {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
