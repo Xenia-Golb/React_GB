@@ -29,21 +29,22 @@ function CommentsList() {
         <ul className="ul-list">
             {
                 CommentList.map((item, index) => {
-                    return <li key={index}>{item}</li>
+                    return <div className="user">
+                        <li key={index}>{item}</li>
+                        <button className="btn" onClick={() => deleteItem(index)}>delete</button>
+                    </div>
+
                 })
             }
         </ul>
-        <div className="user">
-            <button onClick={deleteItem}>delete</button>
-            <form className="add-comment">
-                <input
-                    type="text"
-                    placeholder="Введите комментарий: "
-                    value={value}
-                    onChange={updateCommentList}
-                    maxLength={10} />
-                <button className="btn" onClick={addItem}>add</button></form>
-        </div>
+        <form className="add-comment">
+            <input
+                type="text"
+                placeholder="Введите комментарий: "
+                value={value}
+                onChange={updateCommentList}
+                maxLength={10} />
+            <button className="btn" onClick={addItem}>add</button></form>
     </div>);
 }
 
