@@ -12,6 +12,9 @@ const todosReducer = (state = initialState, action) => {
             return state.map(todo =>
                 todo.id === action.payload.id ? { ...todo, completed: !todo.completed } : todo
             );
+        case 'REMOVE_TODO':
+            // Удаляем задачу
+            return state.filter(todo => todo.id !== action.payload.id);
         default:
             return state;
     }

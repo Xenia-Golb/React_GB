@@ -4,6 +4,7 @@ import { FilterProvider } from './context/FilterContext';
 import AddTodo from './components/AddToDo';
 import FilterToDo from './components/FilterToDo';
 import ToDoList from './components/ToDoList';
+import Card from './components/card/Card';
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
         <ToDoList />
         <FilterToDo />
       </FilterProvider>
+
+      <Card />
+      <Card />
+      <Card />
     </div>
   );
 }

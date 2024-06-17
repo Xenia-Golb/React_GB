@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleTodo } from '../actions/ToDoActions';
+import { removeTodo } from '../actions/ToDoActions';
 import { FilterContext } from '../context/FilterContext';
 import withFilter from '../hoc/withFilter';
 
@@ -26,9 +27,10 @@ function ToDoList() {
                         style={{
                             textDecoration: todo.completed ? 'line-through' : 'none'
                         }}
-                    >
 
+                    >
                         {todo.text}
+                        <button onClick={() => dispatch(removeTodo(todo.id))}>X</button>
                     </li>
                 ))
             }
