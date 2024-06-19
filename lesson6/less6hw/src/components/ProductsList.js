@@ -1,23 +1,31 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { removeProduct } from '../actions/productsAction';
+import Product from './Product';
+import { addProduct } from '../reducers/productSlice';
+import { deleteProduct } from '../reducers/productSlice';
+
 
 function ProductsList() {
     const products = useSelector(state => state.products);
     const dispatch = useDispatch();
 
-    return (<>
-        <ul>
-            {products.map((product) => (
-                <li key={product.id}>
-                    <h3>{product.name}</h3>
-                    <p>{product.description}</p>
-                    <p>{product.price}</p>
-                    <button onClick={() => dispatch(removeProduct(product.id))}>X</button>
-                </li>
-            ))}
 
-        </ul>
-    </>);
+    return (
+        <div>
+            {
+                products.map((product) => (
+                    <Product
+                        key={product.id}
+                        product={product}
+                        onDelete={() => {
+                            dispatch(deleteProduct(product));
+                        }}
+                    />
+                ))
+            }
+
+
+
+        </div>);
 
 }
 
