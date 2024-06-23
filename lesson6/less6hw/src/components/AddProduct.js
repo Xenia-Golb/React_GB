@@ -1,20 +1,25 @@
-import { useState, useId } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import Input from './UI/Input/Input';
 import Button from './UI/Button/Button';
-import { addProduct } from '../reducers/productSlice';
+import { addProduct } from '../actions/productsAction';
+
 
 function AddProduct() {
     const [product, setProduct] = useState({
+        id: Date.now(),
         title: '',
         description: '',
         price: ''
     });
     const dispatch = useDispatch();
 
-    const handleAddProduct = () => {
-        dispatch(addProduct(product));
+    const AddProduct = (e) => {
+        e.preventDefault();
+        console.log(product);
+        dispatch(addProduct(product.title, product.description, product.price));
         setProduct({
+            id: Date.now(),
             title: '',
             description: '',
             price: ''
@@ -41,7 +46,7 @@ function AddProduct() {
                 onChange={(e) => setProduct({ ...product, price: e.target.value })}
                 placeholder='Product price'
             />
-            <Button onClick={handleAddProduct}>Add product</Button>
+            <Button onClick={AddProduct}>Add product</Button>
         </div>);
 }
 

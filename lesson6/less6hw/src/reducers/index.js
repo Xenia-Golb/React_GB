@@ -1,9 +1,9 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import { productsSlice } from "./productSlice";
+import productReducer from "./productReducer2";
 
 const rootReducer = combineReducers(
     {
-        products: productsSlice,
+        products: productReducer,
     }
 )
 export default rootReducer;
