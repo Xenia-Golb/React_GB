@@ -2,8 +2,7 @@ import Footer from "../layout/Footer/Footer";
 import Form from "../layout/Form/Form";
 import Header from "../layout/Header/Header";
 
-
-function Cart() {
+function ProductPage() {
     return (<section>
         <Header />
 
@@ -12,4 +11,4 @@ function Cart() {
     </section>);
 }
 
-export default Cart;
+export default ProductPage;

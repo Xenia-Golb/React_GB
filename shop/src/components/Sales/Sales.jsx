@@ -22,6 +22,10 @@ function Sales() {
                     img={kid}
                     text={`NEW ARRIVALS <span> FOR KIDS</span>`}
                 />
+                <SalesCard
+                    className="card_last"
+                    img={allTh}
+                    text={`SHOP <span>ALL THINGS</span>`} />
             </div>
 
         </>);

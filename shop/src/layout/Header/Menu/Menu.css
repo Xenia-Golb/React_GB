@@ -1,0 +1,66 @@
+.browse__buttom__box {
+    padding: 20px;
+    margin-top: 80px;
+    left: 1030px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    width: 230px;
+    z-index: 6;
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    background-color: #fff;
+}
+
+.browse__buttom__box__title {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #232323;
+    display: block;
+    text-transform: uppercase;
+}
+
+
+.browse__buttom__box::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 16px;
+    position: absolute;
+    top: -9px;
+    left: 80px;
+    transform: rotate(45deg);
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    background-color: #fff;
+}
+
+.browse__buttom__box__tit {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #f16d7f;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.browse__buttom__box__link {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #232323;
+
+
+}
+
+.browse__buttom__box__link:hover {
+    color: #f16d7f;
+}

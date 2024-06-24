@@ -1,8 +1,8 @@
 function SalesCard({ img, text, className }) {
     return (
         <div className="card">
-            <img src={img} alt="" />
-            <p>{text}</p>
+            <img className="card__img" src={img} alt="" />
+            <p className="card__text">{text}</p>
         </div>);
 }
 

@@ -1,6 +1,7 @@
 
 import './App.css';
-import Catalog from './components/Catalog/Catalog';
+import CatalogCards from './components/Catalog/CatalogCards';
+
 import Home from './components/Home/Home';
 import Sales from './components/Sales/Sales';
 import Footer from './layout/Footer/Footer';
@@ -13,8 +14,7 @@ function App() {
     <div className="App ">
       <Header />
       <Home />
-      <Sales />
-      <Catalog />
+      <CatalogCards />
       <Info />
       <Form />
       <Footer />
