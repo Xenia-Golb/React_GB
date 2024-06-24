@@ -1,0 +1,21 @@
+.sales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.sales img {
+    width: 300px;
+    height: 230px;
+}
+
+.sales .last-child {
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    align-items: stretch;
+    height: 50px;
+    width: 400px;
+}
