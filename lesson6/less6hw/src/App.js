@@ -2,7 +2,6 @@
 import { Provider } from 'react-redux';
 import './App.css';
 import AddProduct from './components/AddProduct';
-import Product from './components/Product';
 import ProductsList from './components/ProductsList';
 import store from './store/store';
 

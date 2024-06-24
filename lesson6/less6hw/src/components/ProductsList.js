@@ -7,7 +7,6 @@ import { removeProduct } from '../actions/productsAction';
 function ProductsList() {
     const products = useSelector(state => state.products);
     const dispatch = useDispatch();
-    console.log(products);
 
     return (
         <div>
@@ -17,8 +16,8 @@ function ProductsList() {
                         title={product.title}
                         price={product.price}
                         description={product.description}
-
                     />
+                    <Button onClick={() => dispatch(removeProduct(product.id))}>Delete</Button>
                 </>
             ))
             }
