@@ -1,11 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit'
-
+import { configureStore } from '@reduxjs/toolkit';
+import tasksReducer from '../reducer/tasksSlice';
 
 export default configureStore({
-    reducer: {},
-    middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware({
-
-        }),
-})
-
+    reducer: {
+        tasks: tasksReducer
+    }
+});

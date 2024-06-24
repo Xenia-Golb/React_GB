@@ -1,4 +1,4 @@
-export const tasks = [
+const tasks = [
     {
         id: 1,
         title: 'Задача 1',
@@ -22,3 +22,4 @@ export const tasks = [
         completed: true
     }
 ];
+export default tasks;
