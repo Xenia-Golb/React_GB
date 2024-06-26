@@ -1,24 +1,18 @@
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import CatalogCards from './components/Catalog/CatalogCards';
-
-import Home from './components/Home/Home';
-import Sales from './components/Sales/Sales';
-import Footer from './layout/Footer/Footer';
-import Form from './layout/Form/Form';
-import Header from './layout/Header/Header';
-import Info from './layout/Info/Info';
+import HomePage from './pages/HomePage';
+import ProductPage from './pages/ProductPage';
+import Cart from './pages/CartPage';
 
 function App() {
   return (
-    <div className="App ">
-      <Header />
-      <Home />
-      <CatalogCards />
-      <Info />
-      <Form />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/product/" element={<ProductPage />} />
+        <Route path="/cart/" element={<Cart />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

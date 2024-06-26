@@ -1,0 +1,15 @@
+.product-cards {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product-cards img {
+    width: 300px;
+    height: 340px;
+}

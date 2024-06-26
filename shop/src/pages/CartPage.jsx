@@ -6,7 +6,7 @@ import Header from "../layout/Header/Header";
 function Cart() {
     return (<section>
         <Header />
-
+        <Cart />
         <Form />
         <Footer />
     </section>);

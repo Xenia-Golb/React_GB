@@ -7,6 +7,7 @@ import headerUser from "../../img/headerUser.svg";
 import headerCart from "../../img/headerCart.svg";
 import Menu from "./Menu/Menu";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
     const [visibleMenu, setVisibleMenu] = useState(false);
@@ -15,14 +16,18 @@ function Header() {
     }
     return (<div className="header">
         <div className="headerLeft">
-            <img src={headerLogo} alt="logo" />
+            <Link to={'/'}>
+                <img className='headerLogo' src={headerLogo} alt="logo" />
+            </Link>
             <img src={headerSearch} alt="logo" />
         </div>
         <div className="headerRight">
             <img src={headerMenu}
                 onClick={handlerVisible} style={{ marginRight: "20px", marginTop: "10px" }} alt="menu" />
             <img src={headerUser} alt="user" />
-            <img src={headerCart} alt="cart" />
+            <Link to={'/cart/'}>
+                <img src={headerCart} alt="cart" />
+            </Link>
             <Menu visible={visibleMenu} />
 
         </div>

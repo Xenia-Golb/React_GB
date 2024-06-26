@@ -1,4 +1,13 @@
+
 function BreadCrumb() {
+    const breadCrumbs = [
+        { to: '/', text: 'Home' },
+        { to: '/catalog', text: 'Catalog' },
+        {}
+
+
+
+    ]
     return (
         <div className="bread__crumb center">
             <h3 className="bread__crumb__titl">New Arrivals</h3>

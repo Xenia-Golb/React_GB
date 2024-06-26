@@ -3,9 +3,8 @@ import Input from "../../UI/Input/Input";
 import "./Form.css"
 
 function Form() {
-    return (<div className="subscribe">
-        <div className="leftPart">
-
+    return (<div className="subscribe center">
+        <div className="leftPart ">
             <p className="subscribe__p">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
                 a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
         </div>

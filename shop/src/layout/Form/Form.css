@@ -1,7 +1,6 @@
 .subscribe {
     height: 448px;
-    background-size: cover;
-    width: 100vw;
+    background-size: auto;
     display: flex;
     align-content: stretch;
     flex-wrap: wrap;
@@ -12,6 +11,7 @@
 
     &::before {
         content: url("../../img/back.png");
+        width: 100%;
         position: absolute;
         opacity: 40%;
         z-index: -1;
