@@ -1,6 +1,4 @@
-import Button from "../../UI/Button/Button";
-import Input from "../../UI/Input/Input";
-import "./Form.css"
+import './Form.css';
 
 function Form() {
     return (<div className="subscribe center">
@@ -11,7 +9,7 @@ function Form() {
         <div className="rightPart">
             <h3>SUBSCRIBE</h3>
             <p>FOR OUR NEWLETTER AND PROMOTION</p>
-            <form>
+            <form className='form'>
                 <input type="text" placeholder="Enter your email" />
                 <button>Subscribe</button>
             </form>

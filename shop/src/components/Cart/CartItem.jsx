@@ -1,13 +1,16 @@
+import './CartItem.css'
 function CartItem({ img, title, price, color, size, quantity }) {
     return (<div className="cart-item">
-        <img src={img} alt="photo_cart_item" />
+        <img className="item__image" src={img} alt="photo_cart_item" />
         <div className="item__details">
             <p className="item__name">{title}</p>
-            <p className="item__price">{price}</p>
-            <p className="item__color">{color}</p>
-            <p className="item__size">{size}</p>
-            <p className="item__quantity">{quantity}</p>
+
+            <p className="item__price">Price: {price}</p>
+            <p className="item__color">Color: {color}</p>
+            <p className="item__size">Size: {size}</p>
+            <p className="item__quantity">Quantity: {quantity}</p>
         </div>
+        <button className="item_btn">X</button>
     </div>);
 }
 

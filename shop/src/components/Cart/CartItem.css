@@ -1,0 +1,38 @@
+.cart-item {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    -webkit-box-shadow: 39px 35px 8px -16px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 39px 35px 8px -16px rgba(34, 60, 80, 0.2);
+    box-shadow: 39px 35px 8px -16px rgba(34, 60, 80, 0.2);
+}
+
+.item__image {
+    width: 16.38rem;
+    height: 19.13rem;
+}
+
+.item__details {
+    width: 18rem;
+    height: 19.13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+
+.item_btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

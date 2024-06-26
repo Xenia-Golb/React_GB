@@ -1,0 +1,128 @@
+.cart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 128px;
+}
+
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-panel__btns {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.left-panel__btn {
+    width: 14.69rem;
+    height: 3.13rem;
+    color: rgb(0, 0, 0);
+    font-size: 0.88rem;
+    font-weight: 300;
+    line-height: 1.06rem;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.cart-input {
+    width: 355px;
+    height: 45px;
+    padding-top: 16px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 0.06rem solid rgb(164, 164, 164);
+    color: rgb(74, 74, 74);
+    font-size: 0.69rem;
+    font-weight: 300;
+    line-height: 0.81rem;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.cart-input:focus {
+    outline: none;
+}
+
+.cart-form-btn {
+    margin-top: 20px;
+    padding: 5px;
+    width: 7rem;
+    height: 3rem;
+    color: rgb(0, 0, 0);
+    font-size: 0.88rem;
+    font-weight: 300;
+    line-height: 1.06rem;
+    letter-spacing: 0%;
+    text-align: center;
+    border: 0.06rem solid rgb(164, 164, 164);
+    background-color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.total-block {
+    width: 22.5rem;
+    height: 13.38rem;
+    background: rgb(245, 243, 243);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px;
+}
+
+.total-block-btn {
+    width: 17.06rem;
+    height: 3.13rem;
+    padding: 10px;
+    background: rgb(241, 109, 127);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.19rem;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+}
