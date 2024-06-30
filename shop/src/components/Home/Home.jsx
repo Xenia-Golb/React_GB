@@ -5,8 +5,8 @@ function Home() {
     return (<div className="home center">
         <img src={home} alt="" />
         <h1 className="home__text">THE BRAND <br />
-            <span1> OF LUXERIOUS</span1>
-            <span2> FASHION</span2>
+            <span> OF LUXERIOUS</span>
+            <span> FASHION</span>
         </h1>
 
     </div>);

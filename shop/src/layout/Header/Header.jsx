@@ -1,4 +1,3 @@
-import Button from "../../UI/Button/Button";
 import "../Header/Header.css";
 import headerLogo from "../../img/headerLogo.svg";
 import headerMenu from "../../img/headerMenu.svg";
@@ -24,7 +23,7 @@ function Header() {
         <div className="headerRight">
             <img src={headerMenu}
                 onClick={handlerVisible} style={{ marginRight: "20px", marginTop: "10px" }} alt="menu" />
-            <img src={headerUser} alt="user" />
+            <Link to={'/registration/'}><img src={headerUser} alt="user" /></Link>
             <Link to={'/cart/'}>
                 <img src={headerCart} alt="cart" />
             </Link>

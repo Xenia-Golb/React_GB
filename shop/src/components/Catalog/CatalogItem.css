@@ -50,6 +50,17 @@
     text-align: left;
 }
 
+.item__size {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f16d7f;
+    padding-bottom: 10px;
+    text-align: left;
+    display: none;
+}
+
 .item__btn {
     position: absolute;
     width: 300px;

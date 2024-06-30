@@ -8,7 +8,6 @@ export const cartData = [
         price: 300,
         color: 'Red',
         size: 'XL',
-        quantity: 2
 
     },
     {
@@ -18,6 +17,5 @@ export const cartData = [
         price: 300,
         color: 'Red',
         size: 'XL',
-        quantity: 2
     }
 ];

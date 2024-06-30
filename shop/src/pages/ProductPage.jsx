@@ -5,12 +5,14 @@ import Form from "../layout/Form/Form";
 import Header from "../layout/Header/Header";
 import { catalogData } from "../data/catalogData";
 import CatalogItem from "../components/Catalog/CatalogItem";
-import { Link } from 'react-router-dom';
+import Breadcrumbs from '../components/BreadCrumb/BreadCrumb';
+
 
 function ProductPage() {
 
     return (<section>
         <Header />
+        <Breadcrumbs />
         <Product />
         <div className='product-cards'>
             {catalogData.slice(0, 3).map(item => {

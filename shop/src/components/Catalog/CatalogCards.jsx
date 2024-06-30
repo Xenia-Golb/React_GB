@@ -11,7 +11,7 @@ function CatalogCards() {
         </div>
         <div className="catalog__par">Shop for items based on what we featured in this week</div>
         <div className='catalog'>
-            {catalogData.map((item) => (
+            {catalogData.slice(0, 9).map((item) => (
                 <CatalogItem
                     key={item.id}
                     title={item.name}

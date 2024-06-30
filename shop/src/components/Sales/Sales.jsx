@@ -1,31 +1,28 @@
-import SalesCard from "./SalesCard";
+
 import "./Sales.css";
-import kid from "../../img/kid.png";
-import woman from "../../img/woman.png";
-import man from "../../img/man.png";
-import allTh from "../../img/allTh.png";
+
 
 
 function Sales() {
     return (
         <>
-            <div className="sales center">
-                <SalesCard
-                    img={woman}
-                    text={`30% OFF <span>FOR WOMEN</span>`}
-                />
-                <SalesCard
-                    img={man}
-                    text={`HOT DEAL <span> FOR MEN</span>}`}
-                />
-                <SalesCard
-                    img={kid}
-                    text={`NEW ARRIVALS <span> FOR KIDS</span>`}
-                />
-                <SalesCard
-                    className="card_last"
-                    img={allTh}
-                    text={`SHOP <span>ALL THINGS</span>`} />
+            <div className="sale__top">
+                <div className="sale__item sale__item_1">
+                    <p className="sale__text">30% OFF</p>
+                    <h3 className="sale__heading">FOR WOMEN</h3>
+                </div>
+                <div className="sale__item sale__item_2">
+                    <p className="sale__text">HOT DEAL</p>
+                    <h3 className="sale__heading">FOR MEN</h3>
+                </div>
+                <div className="sale__item sale__item_3">
+                    <p className="sale__text">NEW ARRIVALS</p>
+                    <h3 className="sale__heading">FOR KIDS</h3>
+                </div>
+            </div>
+            <div className="sale__bottom">
+                <p className="sale__text">LUXIROUS & TRENDY</p>
+                <h3 className="sale__heading">ACCESORIES</h3>
             </div>
 
         </>);

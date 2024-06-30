@@ -1,22 +1,29 @@
+import { Link, useLocation } from "react-router-dom";
+import "./BreadCrumb.css"
 
-function BreadCrumb() {
-    const breadCrumbs = [
-        { to: '/', text: 'Home' },
-        { to: '/catalog', text: 'Catalog' },
-        {}
+const Breadcrumbs = () => {
+    const location = useLocation();
+    const pathnames = location.pathname.split("/").filter((x) => x);
+    let breadcrumbPath = "";
 
-
-
-    ]
     return (
-        <div className="bread__crumb center">
-            <h3 className="bread__crumb__titl">New Arrivals</h3>
-            <div className="bread__crumb__nav">
-                <a href="#" className="bread__crumb__link">Home / </a>
-                <a href="#" className="bread__crumb__link">Men /</a>
-                <a href="#" className="bread__crumb__link__span">New Arrivals</a>
-            </div>
-        </div>);
-}
+        <div className="breadcrumbs">
+            {pathnames.map((name, index) => {
+                breadcrumbPath += `/${name}`;
+                const isLast = index === pathnames.length - 1;
+                console.log(pathnames, breadcrumbPath);
 
-export default BreadCrumb;
+                return isLast ? (
+                    <span className="bread__crumb__titl " key={breadcrumbPath}> {name}</span>
+                ) : (
+                    <span className="bread__crumb__titl " key={breadcrumbPath}>
+                        {" "}
+                        / <Link className="bread__crumb__link " to={breadcrumbPath}>{name}</Link>
+                    </span>
+                );
+            })}
+        </div>
+    );
+};
+
+export default Breadcrumbs;

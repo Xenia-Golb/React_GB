@@ -1,22 +1,62 @@
-.sales {
+.sale {
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+.sale__item {
+    height: 260px;
+    flex-grow: 1;
+    background-position: center;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.sale__item_1 {
+    background-image: url(../../img/woman.png);
+}
+
+.sale__item_2 {
+    background-image: url(../../img/man.png);
+}
+
+.sale__item_3 {
+    background-image: url(../../img/kid.png);
+}
+
+.sale__top {
+    display: flex;
     gap: 30px;
 }
 
-.card__img {
-    width: 300px;
-    height: 230px;
+.sale__bottom {
+    background-image: url(../../img/allTh.png);
+    height: 180px;
+    background-position: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
 }
 
+.sale__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
 
-.card__last {
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    align-items: stretch;
-    height: 50px;
-    width: 400px;
+.sale__heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #F16D7F;
 }

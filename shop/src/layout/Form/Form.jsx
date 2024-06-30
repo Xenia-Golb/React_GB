@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import './Form.css';
 
 function Form() {
-    return (<div className="subscribe center">
+    return (<div className="subscribe ">
         <div className="leftPart ">
             <p className="subscribe__p">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
                 a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
@@ -11,7 +12,7 @@ function Form() {
             <p>FOR OUR NEWLETTER AND PROMOTION</p>
             <form className='form'>
                 <input type="text" placeholder="Enter your email" />
-                <button>Subscribe</button>
+                <Link to={'/registration/'}><button>Subscribe</button></Link>
             </form>
         </div>
     </div>);

@@ -1,4 +1,4 @@
-.bread__crumb {
+.breadcrumbs {
     height: 148px;
     background-color: #f8f3f4;
     margin-bottom: 10px;
@@ -15,6 +15,8 @@
     font-weight: 900;
     text-transform: uppercase;
     color: #f16d7f;
+    text-align: center;
+    padding-left: 50px;
 }
 
 .bread__crumb__link {
@@ -23,13 +25,4 @@
     font-weight: 300;
     text-transform: uppercase;
     color: #636363;
-}
-
-.bread__crumb__link__span {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #f16d7f;
 }
